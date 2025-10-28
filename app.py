@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
 
 def get_expert_response(user_input, expert_type):
     system_messages = {
